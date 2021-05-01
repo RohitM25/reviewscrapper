@@ -1,0 +1,37 @@
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% block body %}
+
+<!--<script>-->
+<!--&lt;!&ndash; alert("Welcome!") &ndash;&gt;-->
+<!--function alertText(){-->
+<!-- alert("Please wait while we Get the reviews foy you")-->
+<!--}-->
+<!--</script>-->
+<div class="btn-group">
+  <!-- <button id = "button1" class="btn btn-primary" onclick="window.location.href = 'http://127.0.0.1:8000/searchData';">Show Review Data</button> -->
+<!-- <button id = "button2" class="btn btn-primary btn-block" onclick="location.href = 'http://127.0.0.1:8000/searchResult.html';">Search Images In DB</button> -->
+
+</div>
+
+<form action="/" method="POST">
+	<div class="user-input">
+		<div class="login-screen">
+			<div class="app-title">
+				<h1>Review Scrapper</h1>
+			</div>
+ 
+			<div class="login-form">
+				<div class="control-group">
+				<input style="width:800px" type="text" class="login-field"  required="" placeholder="Enter keyword" name="content"></br>
+				<input type="submit" value="Submit" onclick="alertText()" class="btn btn-primary btn-large btn-block" >
+			    <br>
+				</div>
+			   
+			</div>
+			
+		</div>
+	</div>
+</form>
+
+{% endblock %}
